@@ -1,0 +1,125 @@
+.articles{
+
+}
+.article__content{
+    max-width: 1462px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px auto 0;
+    gap: 64px;
+}
+.article__content:nth-child(even) .article__info{
+    order: 2;
+}
+.article__info{
+    padding: 150px;
+    position: relative;
+}
+.article__index{
+    display: inline-block;
+    font-size: 240px;
+    color: rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.article__index::after{
+    content: "";
+    width: 72px;
+    height: 2px;
+    background: var(--accent);
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+}
+.article__title{
+    font-size: 64px;
+    color: var(--white);
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.article__desc{
+    color: var(--white);
+    font: var(--bodyLight);
+    margin-bottom: 24px;
+
+}
+.article__link{
+    font: var(--bodyBold);
+    color: var(--accent);
+}
+.article__arrow{
+    vertical-align: middle;
+}
+
+.article__image{
+    max-width: 566px;
+}
+
+
+@media screen and (max-width: 1240px) {
+    .article__info{
+        padding: 100px;
+    }
+    .article__index{
+        font-size: 140px;
+    }
+    .article__index::after{
+        left: 100px;
+        width: 48px;
+    }
+    .article__image{
+        max-width: 366px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .article__content{
+        gap: 32px;
+    }
+    .article__index{
+        font-size: 120px;
+    }
+    .article__title{
+        font-size: 48px;
+    }
+    .article__desc{
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .article__link{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .article__content{
+        flex-direction: column;
+        margin: 100px auto 0;
+    }
+    .article__info{
+        order: 2;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .article__image{
+        width: 100%;
+    }
+    .article__info{
+        padding: 100px 24px;
+    }
+    .article__index{
+        font-size: 80px;
+        left: 24px;
+    }
+    .article__index::after{
+        width: 72px;
+        left: 0;
+    }
+
+}

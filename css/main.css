@@ -1,0 +1,64 @@
+@import './reset.css';
+@import './header.css';
+@import './hero.css';
+@import './articles.css';
+@import './footer.css';
+
+:root{
+    --fontPrimary: 'Poppins', sans-serif;
+    
+    --headline1: 500 88px/100px var(--fontPrimary);
+    --headline2: 600 64px/86px var(--fontPrimary);
+
+    --bodyBold: 700 18px/32px var(--fontPrimary);
+    --bodyRegular: 500 18px/32px var(--fontPrimary);
+    --bodyLight: 400 18px/32px var(--fontPrimary);
+
+    --accent: #FDD130;
+    --bg: #0B1D26;
+    --white: #FFFFFF;
+
+}
+.container{
+    margin: 0 auto;
+    max-width: 1760px;
+    width: 95%;
+}
+body{
+    background: linear-gradient( to top, var(--bg) 2600px, transparent 80%), url('../img/bg.png');
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: var(--fontPrimary);
+    margin: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (max-width: 1240px) {
+    body{
+        background: linear-gradient( to top, var(--bg) 2100px, transparent 80%), url('../img/bg.png');
+        background-position: center;
+    }  
+}
+@media screen and (max-width: 940px) {
+    body{
+        background: linear-gradient( to top, var(--bg) 3100px, transparent 80%), url('../img/bg.png');
+        background-position: top;
+    }  
+}
+@media screen and (max-width: 640px) {
+    body{
+        background: linear-gradient( to top, var(--bg) 2800px, transparent 80%), url('../img/bg.png');
+    }    
+}
+@media screen and (max-width: 460px) {
+    body{
+        background: linear-gradient( to top, var(--bg) 3800px, transparent 80%), url('../img/bg.png');
+        background-position: center;
+    }    
+}

@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 56px 0;
+}
+.nav__list{
+    display: flex;
+    gap: 3rem;
+}
+.nav__link{
+    color: var(--bg);
+    font: var(--bodyBold);
+}
+
+@media screen and (max-width: 640px) {
+    .header{
+        flex-direction: column;
+        margin: 24px 0;
+        gap: 24px;
+    }
+    .nav__list{
+        gap: 2rem;
+    }
+    .nav__link{
+        font-size: 16px;
+    }
+}
